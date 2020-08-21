@@ -8,10 +8,10 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
-    terminal = 'konsole',
+    terminal = 'alacritty',
     rofi = rofi_command,
     lock = 'i3lock -c 0f0e17', --i3lock with a nice dark background
-    quake = 'konsole',
+    quake = 'alacritty',
     screenshot = 'flameshot full -p ~/Pictures/screenshot/',
     region_screenshot = 'flameshot gui -p ~/Pictures/screenshot/',
     delayed_screenshot = 'flameshot full -p ~/Pictures/screenshot -d 5000',
@@ -20,7 +20,7 @@ return {
     editor_cmd = os.getenv('EDITOR') or 'nano',
     social = 'caprine',
     game = 'steam',
-    files = 'nautilus',
+    files = 'pcmanfm',
     music = 'spotify' 
   },
   -- List of apps to start once on start-up
