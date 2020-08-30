@@ -138,14 +138,6 @@ local TopPanel = function(s, offset)
         arc_thickness = 1,
         enable_battery_warning = true,
     }),
-      --CPU Widget
-      cpu_widget({
-        width = 70,
-            step_width = 2,
-            step_spacing = 0,
-            color = '#434c5e',
-            enable_kill_button = true,
-      }),
       -- Clock
       clock_widget,
       -- Layout box

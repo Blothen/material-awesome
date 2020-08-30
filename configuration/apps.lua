@@ -15,7 +15,7 @@ return {
     screenshot = 'flameshot full -p ~/Pictures/screenshot/',
     region_screenshot = 'flameshot gui -p ~/Pictures/screenshot/',
     delayed_screenshot = 'flameshot full -p ~/Pictures/screenshot -d 5000',
-    browser = 'brave', -- brave-browser-nightly
+    browser = 'chromium', -- brave-browser-nightly
     editor = 'code', -- text editor
     editor_cmd = os.getenv('EDITOR') or 'nano',
     social = 'caprine',
@@ -38,7 +38,9 @@ return {
     '/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     'xfce4-power-manager', -- Power manager
      'flameshot', -- Flameshot screenshot utility
-    --  'synology-drive -minimized',
+    'volnoti',
+    'setxkbmap ie',
+     --  'synology-drive -minimized',
     -- 'steam -silent',
     --  '/usr/bin/barrier', --not using barrier now but will be later
     --'/home/wizzdom/.local/bin/wallpaper', -- wallpaper-reddit script
